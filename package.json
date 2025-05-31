@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Curve25519 and Ed25519 cryptographic operations binding for Node.js",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "node-gyp rebuild",
     "prebuild": "prebuildify --napi --strip",
