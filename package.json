@@ -5,7 +5,6 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "node-gyp rebuild",
     "prebuild": "prebuildify --napi --strip",
     "prepublishOnly": "npm run prebuild"
   },
@@ -24,10 +23,9 @@
       10
     ]
   },
-  "dependencies": {
-    "@types/node": "^22.15.29"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^22.15.29",
     "node-addon-api": "^8.3.1",
     "node-gyp": "^11.2.0",
     "prebuildify": "^6.0.1"
