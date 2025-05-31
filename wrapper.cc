@@ -93,8 +93,8 @@ Napi::Value Curve25519_Verify(const Napi::CallbackInfo &info)
 Napi::Object Init(Napi::Env env, Napi::Object exports)
 {
     exports.Set("curve25519_donna", Napi::Function::New(env, Curve25519_Donna));
-    exports.Set("curve25519_sign", Napi::Function::New(env, Curve25519_Sign));
-    exports.Set("curve25519_verify", Napi::Function::New(env, Curve25519_Verify));
+    exports.Set("sign25519", Napi::Function::New(env, Curve25519_Sign));
+    exports.Set("verify25519", Napi::Function::New(env, Curve25519_Verify));
     return exports;
 }
 
