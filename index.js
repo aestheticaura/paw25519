@@ -9,4 +9,10 @@ const platform = process.platform
 const arch = process.arch
 const binName = `${platform}-${arch}-paw25519.node`
 
-export default require(join(__dirname, binName))
+const binding = require(join(__dirname, binName))
+
+
+export default binding
+export const curve25519_donna = binding.curve25519_donna
+export const sign25519 = binding.sign25519
+export const verify25519 = binding.verify25519
