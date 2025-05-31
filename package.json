@@ -1,10 +1,12 @@
 {
   "name": "paw25519",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Curve25519 and Ed25519 cryptographic operations binding for Node.js",
   "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {},
+  "scripts": {
+    "prebuild": "prebuildify --napi --strip -o prebuilds --rename '{platform}-{arch}-paw25519.node'"
+  },
   "keywords": [
     "curve25519",
     "ed25519",
@@ -13,13 +15,6 @@
   "author": "LightningNeko",
   "license": "MIT",
   "type": "module",
-  "binary": {
-    "module_name": "paw25519",
-    "module_path": "prebuilds/{platform}-{arch}/",
-    "napi_versions": [
-      10
-    ]
-  },
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.15.29",
