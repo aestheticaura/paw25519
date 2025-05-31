@@ -1,0 +1,22 @@
+{
+  "name": "paw25519",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "prebuild": "prebuildify --napi --strip",
+    "prepublishOnly": "npm run prebuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-addon-api": "^8.3.1",
+    "prebuildify": "^6.0.1"
+  },
+  "devDependencies": {
+    "node-gyp": "^11.2.0"
+  }
+}
