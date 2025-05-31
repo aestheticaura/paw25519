@@ -1,22 +1,32 @@
 {
   "name": "paw25519",
   "version": "1.0.0",
-  "description": "",
+  "description": "Curve25519 and Ed25519 cryptographic operations binding for Node.js",
   "main": "index.js",
   "scripts": {
     "build": "node-gyp rebuild",
     "prebuild": "prebuildify --napi --strip",
     "prepublishOnly": "npm run prebuild"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "curve25519",
+    "ed25519",
+    "pawket"
+  ],
+  "author": "LightningNeko",
+  "license": "MIT",
   "type": "commonjs",
-  "dependencies": {
-    "node-addon-api": "^8.3.1",
-    "prebuildify": "^6.0.1"
+  "binary": {
+    "module_name": "paw25519",
+    "module_path": "prebuilds/{platform}-{arch}/",
+    "napi_versions": [
+      10
+    ]
   },
+  "dependencies": {},
   "devDependencies": {
+    "node-addon-api": "^8.3.1",
+    "prebuildify": "^6.0.1",
     "node-gyp": "^11.2.0"
   }
 }
