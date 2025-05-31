@@ -4,10 +4,7 @@
   "description": "Curve25519 and Ed25519 cryptographic operations binding for Node.js",
   "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {
-    "prebuild": "prebuildify --napi --strip",
-    "prepublishOnly": "npm run prebuild"
-  },
+  "scripts": {},
   "keywords": [
     "curve25519",
     "ed25519",
